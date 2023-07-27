@@ -270,4 +270,4 @@ def show_wordcloud():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
