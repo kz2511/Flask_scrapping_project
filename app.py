@@ -239,8 +239,6 @@ def index():
 
             # save dataframe as a csv which will be availble to download
             download_path = get_data.save_as_dataframe(df, fileName=search_string.replace("+", "_"))
-
-
             # finish time counter and calclulate time taked to complet ethis programe
             finish = time.perf_counter()
             print(f"program finished with and timelapsed: {finish - start} second(s)")
@@ -270,4 +268,4 @@ def show_wordcloud():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run()
